@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.navbarr {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+.navbar1 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imagesection {
+  height: 55px;
+  width: 80px;
+}
+.nav-img {
+  height: inherit;
+  width: inherit;
+}
+
+.section {
+  width: 200px;
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+}
+.linkss {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: rgb(126, 52, 52);
+}
+.bttn1 {
+  width: 70px;
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgb(243, 243, 243);
+  transition: all 0.3s ease;
+}
+
+/* PAGE */
+
+#container {
+  width: 100%;
+  height: 120vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/bg.jpg");
+}
+#container1 {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-image: url("./images/bg.jpg");
+}
+#hd1 {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  text-shadow: 3px 0px 10px rgb(252, 15, 15);
+}
+.btn1 {
+  margin-top: 20px;
+  font-size: large;
+  font-weight: 800;
+  height: 50px;
+  width: 70px;
+  color: black;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease;
+}
+
+.btnLogin {
+  margin-top: 25px;
+  font-size: large;
+  font-weight: 800;
+  height: 50px;
+  width: 200px;
+  color: black;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease;
+}
+
+.divTop {
+  margin-top: 4em;
+  height: 100%vh;
+  width: 100%;
+}
+tbody {
+  padding: 5px;
+  height: inherit;
+  width: 100%;
+}
+
+.table {
+  padding: 12px;
+  height: inherit;
+  width: 100%;
+  border-spacing: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+table > thead > tr > th {
+  padding: 20px;
+  color: black;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+table > tbody > tr > td {
+  color: white;
+  padding: 8px;
+  font-family: fantasy;
+}
+
+.dataTable {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.dataTable1 {
+  width: 22em;
+  position: relative;
+  margin-top: 40px;
+  border: 1px solid black;
+  margin-left: 40px;
+  overflow-y: scroll;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.434);
+}
+
+.inp1 {
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 60px;
+  width: 35%;
+  border-radius: 3px;
+  text-indent: 20px;
+  color: black;
+  text-wrap: auto;
+  font-size: medium;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.homeimg1,
+.homeimg {
+  height: 95%;
+  width: 80%;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+.homeimg {
+  filter: contrast(3);
+  mix-blend-mode: darken;
+}
+
+.lgimg1 {
+ 
+  height: 33em;
+  width: 30em;
+  position: relative;
+  right: 53px;
+
+}
+.lgimg {
+  height: inherit;
+  width: 25em;
+  filter: saturate(5);
+  mix-blend-mode: color-burn;
+}
+
+.circle1{
+  margin-top: 5px;
+  height: 30px;
+  width: 30px;
+}
+.circle{
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  border-top:3px solid rgb(255, 255, 255);
+  animation: roll .5s linear infinite;
+}
+@keyframes roll {
+
+ 100%{
+  transform: rotate(360deg);
+ }
+}
+
+/*******  HOVER ********/
+
+.inp1:focus {
+  outline: none;
+}
+.btn1:hover,
+.btnLogin:hover {
+  filter: drop-shadow(0 0 6px white);
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+
+.bttn1:hover {
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+  cursor: pointer;
+  transform: translateX(2px);
+}
+
+.updateBtn:hover {
+  filter: drop-shadow(0 0 6px white);
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 12px rgb(232, 50, 50));
+}
