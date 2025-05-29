@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+/auth.js
+
+/server.js
+
+/.env
 .env
 
 # testing
