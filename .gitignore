@@ -5,12 +5,22 @@
 /.pnp
 .pnp.js
 
-/auth.js
-
-/server.js
-
-/.env
+# Node.js - Backend
+backend/node_modules/
+backend/.env
+backend/npm-debug.log*
 .env
+
+# React - Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+
 
 # testing
 /coverage

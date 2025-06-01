@@ -7,7 +7,7 @@ const router = express.Router();
 router.get("/check/:input", async (req, res) => {
   const { input } = req.params;
 
-  const url = `https://leakcheck.io/api/public?check=${input}`;
+  const url = `${process.env.LEAKCHECK_API}?check=${input}`;
 
   console.log("Fetching data for:",input); 
   try {

@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
@@ -37,7 +38,7 @@ router.get(
   "/google/callback",
   passport.authenticate("google", {
     failureRedirect: "/auth/failure",
-    successRedirect: "http://localhost:3000/home",
+    successRedirect: process.env.REDIRECT,
     session:"false"
   })
 );
