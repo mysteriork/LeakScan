@@ -10,7 +10,7 @@ function Ui() {
   const checkBreach = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5500/breach/check/${input}`
+        `https://leakscan.onrender.com/${input}`
       );
 
       const data = response.data;
