@@ -12,6 +12,7 @@ function Ui() {
       const response = await axios.get(
         `https://leakscan.onrender.com/breach/check/${input}`
       );
+    
 
       const data = response.data;
       setResult(response.data);
