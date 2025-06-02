@@ -5,6 +5,19 @@
 /.pnp
 .pnp.js
 
+# Node modules
+node_modules/
+
+# Env files
+.env
+
+# Logs
+*.log
+
+# Others
+dist/
+.DS_Store
+
 # Node.js - Backend
 backend/node_modules/
 backend/.env
