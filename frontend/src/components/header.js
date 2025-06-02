@@ -8,7 +8,7 @@ function Nav() {
     <div className="navbarr ">
       <nav className="navbar1 flex container1">
         <a href="/" className="imagesection">
-          <img src={img} className="nav-img" alt="image" />
+          <img src={img} className="nav-img" alt="logo" />
         </a>
         <section className="section">
           <ul1 className="nav-ul flex">
