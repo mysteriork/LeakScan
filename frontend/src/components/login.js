@@ -2,7 +2,7 @@ import React from "react";
 import "./ui.css";
 const Login = () => {
   const handleLogin = () => {
-    window.location.href = "http://localhost:5500/auth/google";
+    window.location.href = "https://leakscan.onrender.com/auth/google";
   };
 
   return (
