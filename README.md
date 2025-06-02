@@ -37,26 +37,29 @@ LeakScan is a full-stack web application built with the **MERN stack** (MongoDB,
 
 1. USER INTERFACE
 
-![Screenshot 2025-05-31 235422](https://github.com/user-attachments/assets/9496c4a0-4579-4d31-8e20-38716d43e6cb)
-
+![Screenshot 2025-05-31 235422](https://github.com/user-attachments/assets/b5acb9f8-ee2e-487a-bee5-a61e6b28f300)
 
 
 2. Google Authentication .
    
-![Screenshot 2025-05-29 210110](https://github.com/user-attachments/assets/eddf7869-8979-41c5-ab89-626ead9549aa)
+![Screenshot 2025-05-29 210110](https://github.com/user-attachments/assets/21a843df-15c7-426c-87ca-6c02e4b8e797)
 
 
 4. Main page
    
-![Screenshot 2025-05-31 235456](https://github.com/user-attachments/assets/08edceab-9b8b-46bd-a9ee-a65da8604621)
-
+![Screenshot 2025-05-31 235456](https://github.com/user-attachments/assets/c7918f05-fa17-4a96-bcc6-58a11b34b555)
 
 
 6. Result using Emails OR Username .
 
-![Screenshot 2025-06-01 000039](https://github.com/user-attachments/assets/3393ce9c-08ee-4e97-941c-7a83cf0cb7c3)
+![Screenshot 2025-06-01 000039](https://github.com/user-attachments/assets/cfb3952f-49de-4994-a329-f7314c287ae8)
 
 
+.
+.
+.
+.
+.
 
 
 
