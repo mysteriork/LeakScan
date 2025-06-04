@@ -1,6 +1,8 @@
 
-# 🔐 leakScan 
+# DEPLOY ON -- 👇
+https://leak-scan.netlify.app/
 
+# 🔐 leakScan 
 LeakScan is a full-stack web application built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js) that helps users to find out if there Private data got leaked or breached , by using Email or Usernames of any social handles .
 ## 📌 Features
 
