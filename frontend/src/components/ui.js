@@ -6,16 +6,19 @@ function Ui() {
   const [input, setInput] = useState("");
   const [noData, setNoData] = useState(false);
   const [result, setResult] = useState([]);
+  const [inputle, setInputle] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const checkBreach = async () => {
+    setLoading(true);
     try {
       const response = await axios.get(
         `https://leakscan.onrender.com/breach/check/${input}`
       );
-    
 
       const data = response.data;
       setResult(response.data);
+      setInputle(input);
 
       if (
         !data.breaches ||
@@ -33,15 +36,13 @@ function Ui() {
       console.error("Error checking breach", error);
       setNoData(true);
     }
-    setInput(" ")
+    setInput("");
+    setLoading(false);
   };
 
   return (
-    <div id="container">
-      <section
-        className="main container1 flex"
-        style={{ height: result.breaches ? "220vh" : "170vh" }}
-      >
+    <div id="container" style={{ height: result.breaches ? "220vh" : "170vh" }}>
+      <section className="main container1 flex">
         <div className="hero">
           <h1>Check if Your Email Was Breached</h1>
           <section className="hero1 flex">
@@ -62,17 +63,16 @@ function Ui() {
           <h2>Find - Your - Breach</h2>
           <section className="loading flex">
             <p>
-              'LeakScan' is a privacy-focused web application that allows
-              users to check whether their personal data — such as{" "}
+              'LeakScan' is a privacy-focused web application that allows users to check whether their personal data — such as{" "}
               <strong style={{ color: "yellow" }}>
                 email addresses or social media usernames
               </strong>
-              —has been exposed in known data breaches ? The platform connects
-              securely with third-party APIs to scan breach databases and alert
-              users in real time. FindYourBreach empowers individuals to take
-              control of their digital footprint.
+              —has been exposed in known data breaches ? The platform connects securely with third-party APIs to scan breach databases and alert users in real time. FindYourBreach empowers individuals to take control of their digital footprint.
             </p>
           </section>
+          <br />
+          {loading && <strong className="loader">Loading ... </strong>}
+
           {noData === true && (
             <strong className="positive">YAY , no breach found ! </strong>
           )}
@@ -81,6 +81,13 @@ function Ui() {
             <hr />
             {result && result.breaches && (
               <div className="divTop">
+                <label className="label" style={{ color: "white" }}>
+                  Showing result for{" "}
+                  <strong style={{ color: "lightgreen" }}>
+                    {" "}
+                    " {inputle} "
+                  </strong>
+                </label>
                 <strong
                   style={{
                     color: "red",
@@ -95,7 +102,10 @@ function Ui() {
                 {result.breaches.sources.length > 0 ? (
                   <div
                     className="dataTable1"
-                    style={{ height: result.breaches ? "500px" : "100px" }}
+                    style={{
+                      height:
+                        result.breaches.sources.length > 5 ? "30rem" : "15rem",
+                    }}
                   >
                     <div className="dataTable">
                       <table className="table">
@@ -131,7 +141,6 @@ function Ui() {
             )}
           </section>
         </div>
-       
       </section>
     </div>
   );
