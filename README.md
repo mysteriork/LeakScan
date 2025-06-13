@@ -1,5 +1,5 @@
 
-# PROJECT IS LIVE ON -- 👇
+## 🟢 PROJECT IS LIVE ON -- 👇
 https://leak-scan.netlify.app/
 
 # 🔐 leakScan 
