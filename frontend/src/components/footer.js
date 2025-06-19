@@ -14,13 +14,13 @@ function Footer() {
           <article className="article1 flex">
             <h3>Everything you can imagine is real</h3>
             <label className="footp">
-              FindYourBreach is an open-source project built to help users
+              LeakScan is an open-source project built to help users
               identify if their personal information has been exposed in known
               data breaches. We prioritize privacy and never store any sensitive
               data.
               <br />{" "}
               <h4>
-                || © 2025 FindYourBreach. All rights reserved. | Built with 🛠️
+                || © 2025 LeakScan. All rights reserved. | Built with 🛠️
                 by Rachit Kumar
               </h4>
             </label>
