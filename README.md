@@ -1,4 +1,4 @@
-
+NOTICE - THE SITE IS UNABLE TO LOAD DATA DUE SOME INCONVENIENCE .... WILL BACK SOON !
 ## 🟢 PROJECT IS LIVE ON -- 👇
 https://leak-scan.netlify.app/
 
