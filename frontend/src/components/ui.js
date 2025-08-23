@@ -27,7 +27,7 @@ function Ui() {
       ) {
         setNoData(true);
       } else {
-        setNoData(false); // reset
+        setNoData(false); 
       }
 
       console.log(response);
