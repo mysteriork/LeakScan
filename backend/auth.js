@@ -10,7 +10,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "https://leakscan.onrender.com/auth/google/callback",
+      callbackURL: "https://leakscan-7jh8.onrender.com/auth/google/callback",
     },
     async (accessToken, refreshToken, profile, done) => {
       console.log("User Profile:", profile);
