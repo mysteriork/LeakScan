@@ -1,4 +1,4 @@
-require("dotenv").config()
+require("dotenv").config();
 const express = require("express");
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
@@ -28,10 +28,11 @@ passport.deserializeUser((obj, done) => {
 
 router.get(
   "/google",
-  passport.authenticate("google", { scope: ["profile", "email"],
-    prompt:"consent",
-    session:"false"
-   })
+  passport.authenticate("google", {
+    scope: ["profile", "email"],
+    prompt: "consent",
+    session: false,
+  })
 );
 
 router.get(
@@ -39,7 +40,7 @@ router.get(
   passport.authenticate("google", {
     failureRedirect: "/auth/failure",
     successRedirect: process.env.REDIRECT,
-    session:"false"
+    session: false,
   })
 );
 

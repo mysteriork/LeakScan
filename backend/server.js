@@ -9,12 +9,11 @@ const breaches = require("./breachCheck");
 
 const PORT = process.env.PORT;
 app.use(
-  cors()
-  //   {
-  //   origin: "*",
-  //   methods: ["GET", "POST"],
-  //   allowedHeaders: ["Content-Type", "Authorization"],
-  // }
+  cors({
+    origin: "*",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
 );
 
 app.use(
