@@ -9,12 +9,7 @@ const breaches = require("./breachCheck");
 
 const PORT = process.env.PORT;
 
-app.use(
-  cors({
-    origin: "https://leak-scan.netlify.app/",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(
   session({
